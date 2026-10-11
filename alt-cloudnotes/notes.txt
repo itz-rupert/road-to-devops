@@ -7,7 +7,7 @@
 - System design is about answering the question how do we build an application so it works for millions of users and doesn't break under pressure.
 -  The /dev directory shows the different devices that are connected to our system.
 - Package index is a database of available packages and it is generally located in the /etc/apt/sources.list and /etc/apt/sources.d (directory)w
-
+- Cloud is a global network of servers housed in massive data centers. Instead of storing data on your local hard drive you can access them over the internet.
 ** Week Two Notes
 - Ubuntu is part of the Debian family. version in use for this course is ubuntu 20.04 LTS. The LTS means long term support meaning you have access to updates.
 - Virtual box is a type of hypervisor ( a virtual machine monitor) that allows you to create and run VMs on your computer. Its free and open source.
