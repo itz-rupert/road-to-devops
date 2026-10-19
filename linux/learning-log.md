@@ -164,3 +164,4 @@ Ask systemd:
 -the command wget and curl are good for downloading files.
 - Bash (bourne again shell- .sh) scripting is the process of writing a series of commands in a way that they can be executed automatically without having to write those commands one by one and a bash script is a text file containing the series of commands that the bash shell can execute.
 -the command "set -e" enables you to exit immediately if a command fails say in your bash script for example.
+- You can use the read command to get inputs from the user.
