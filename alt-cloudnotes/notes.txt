@@ -1,13 +1,17 @@
 ** CLOUD ENGINEERING NOTES (Week One)
-
-
 - The software Development life cycle is a structured, repeatable process that development teams use to design, build and maintain software. Its a cycle that explains what each professional in a development team does till the application goes from the raw stage to the final stage.
-- Stage 1-6 include planning (deciding what is what and how they should be), analysis (determining how customers will interact with the platform, infrastructure you will be using etc.), design(how your plan looks like), implementation( making sure your code is working), testing and integration (testing in like sandbox environments to ensure that all is working fine), maintenance ( ensuring that bugs are fixed and improving the system).
+o- Stage 1-6 include planning (deciding what is what and how they should be), analysis (determining how customers will interact with the platform, infrastructure you will be using etc.), design(how your plan looks like), implementation( making sure your code is working), testing and integration (testing in like sandbox environments to ensure that all is working fine), maintenance ( ensuring that bugs are fixed and improving the system). 
 - There are several environments like sandbox or dev environment, fail over environment is a backup environment setup that is used when the live environment is down (so it is a replica of the live), Live environment is for catering to the end users, staging environment is for internal testing like QA testers.
 - System design is about answering the question how do we build an application so it works for millions of users and doesn't break under pressure.
 -  The /dev directory shows the different devices that are connected to our system.
 - Package index is a database of available packages and it is generally located in the /etc/apt/sources.list and /etc/apt/sources.d (directory)w
 - Cloud is a global network of servers housed in massive data centers. Instead of storing data on your local hard drive you can access them over the internet.
+- Cloud engineering involves designing, building and managing cloud based systems and services. Some cloud computing models include: IAAS (Provides virtualized computing resources over the internet such as ec2, google compute engine, azure vms), PAAS(provides hardware and software tools over the internet, typically for application development such as google app engine for developing and hosting webapps, azure app services), SAAS (delivers software applications over the internet such as Microsoft365, google workspace)
+-There are several things to consider as a cloud DevOps engineer when setting up a CI/CD and CD (continuous integration and continuous delivery and continuous deployment) pipeline like: 1- what is the goal of the pipeline 2- Looking for the tools to setup this pipeline with like GitHub, git lab or bitbucket, 3- Setting up the workflow and clarifying what is what for whatever you want to do 4- setting up your environment and cloud infrastructure 5- Automation (making sure everything is repeatable) 6- Getting a secret management tool (like you can't store your environment variables in the same place where you store your application) like hashicorp vault, Azure key vault, etc. 7 Making sure that logging and monitoring is done (getting feedback from your application) with tools like Prometheus, Grafana, ASW CloudWatch, azure monitor, google cloud operations suite. 8- Testing and iteration (you need to make sure everything is working perfectly) for security purposes network and security tools such as AWS VPC, Azure VPN, SonarQube(scans code base to find vulnerabilities and bugs then flag them) . Tools that can be used include GitHub actions, GitLab CICD, Jenkins, vercel, bitbucket pipeline, Argo CD, CircleCI, firebase.
+-For server configuration management popular tools include ansible, chef, puppet.
+- Patching in cloud engineering is the sytematic process of applying updates, bug fixes and security enhancements to cloud hosted virtual machines, applications, containers and operating systems.
+
+
 ** Week Two Notes
 - Ubuntu is part of the Debian family. version in use for this course is ubuntu 20.04 LTS. The LTS means long term support meaning you have access to updates.
 - Virtual box is a type of hypervisor ( a virtual machine monitor) that allows you to create and run VMs on your computer. Its free and open source.
@@ -15,6 +19,8 @@
 -WSL provides a Linux environment integrated with Windows; it is not a traditional VirtualBox VM. Vagrant manages VMs, while VirtualBox actually creates and runs the VM. The VM has its own OS, hostname, IP address, network interfaces, and configuration, so it behaves like a separate computer running on the same physical laptop.
 - Types of processes include:
  parent processes(leads to the creation of more processes), child process, orphaned Process(process who do not have parents possibly they have been terminated so they belong to the main grand parent), zombie process (dead processes that have completed their execution and have been terminated but still find them self running), lastly we have daemon processes which run are those running in the background.
+-  Cloud infrastructure is the collection of hardware and software that powers the cloud, letting you access computing resources like storage, servers, and applications over the internet without owning them.
+- A hypervisor is software, firmware, or hardware that creates and manages virtual machines (VMs) by allocating physical resources—such as CPU, memory, and storage to multiple guest operating systems on a single host machine. There are both type 1 (bare metal) and type 2 (hosted e.g virtual box)
 
 - Networking lessons:
   A reachable port doesn't mean the service behind it is ready. 
